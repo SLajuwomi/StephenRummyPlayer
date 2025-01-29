@@ -19,7 +19,7 @@ DEBUG = True
 PORT = 8017
 USER_NAME = "slajuwomi"
 # TODO:: - change your method of saving information from the very rudimentary method here
-hand = [] # list of cards in our hand
+hand = ["2C 3D 4H"] # list of cards in our hand
 discard = [] # list of cards organized as a stack
 
 # set up the FastAPI application
