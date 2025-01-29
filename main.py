@@ -15,11 +15,10 @@ Revision History
 1.1 - Very basic test player
 """
 
-# TODO - Change the PORT and USER_NAME Values before running
 DEBUG = True
-PORT = 8001
-USER_NAME = "jsmith"
-# TODO - change your method of saving information from the very rudimentary method here
+PORT = 8017
+USER_NAME = "slajuwomi"
+# TODO:: - change your method of saving information from the very rudimentary method here
 hand = [] # list of cards in our hand
 discard = [] # list of cards organized as a stack
 
@@ -41,7 +40,7 @@ class GameInfo(BaseModel):
 @app.post("/start-2p-game/")
 async def start_game(game_info: GameInfo):
     ''' Game Server calls this endpoint to inform player a new game is starting. '''
-    # TODO - Your code here - replace the lines below
+    # TODO: - Your code here - replace the lines below
     global hand
     global discard
     hand = game_info.hand.split(" ")
@@ -56,7 +55,7 @@ class HandInfo(BaseModel):
 @app.post("/start-2p-hand/")
 async def start_hand(hand_info: HandInfo):
     ''' Game Server calls this endpoint to inform player a new hand is starting, continuing the previous game. '''
-    # TODO - Your code here
+    # TODO: - Your code here
     global hand
     global discard
     hand = hand_info.hand.split(" ").sort()
@@ -65,7 +64,7 @@ async def start_hand(hand_info: HandInfo):
 
 def process_events(event_text):
     ''' Shared function to process event text from various API endpoints '''
-    # TODO - Your code here. Everything from here to end of function
+    # TODO: - Your code here. Everything from here to end of function
     global hand
     global discard
     for event_line in event_text.splitlines():
@@ -92,14 +91,14 @@ async def update_2p_game(update_info: UpdateInfo):
         Game Server calls this endpoint to update player on game status and other players' moves.
         Typically only called at the end of game.
     '''
-    # TODO - Your code here - update this section if you want
+    # TODO: - Your code here - update this section if you want
     process_events(update_info.event)
     return {"status": "OK"}
 
 @app.post("/draw/")
 async def draw(update_info: UpdateInfo):
     ''' Game Server calls this endpoint to start player's turn with draw from discard pile or draw pile.'''
-    # TODO - Your code here - everything from here to end of function
+    # TODO: - Your code here - everything from here to end of function
     process_events(update_info.event)
     if len(discard)<1: # If the discard pile is empty, draw from stock
         return {"play": "draw stock"}
@@ -110,7 +109,7 @@ async def draw(update_info: UpdateInfo):
 @app.post("/lay-down/")
 async def lay_down(update_info: UpdateInfo):
     ''' Game Server calls this endpoint to conclude player's turn with melding and/or discard.'''
-    # TODO - Your code here - everything from here to end of function
+    # TODO: - Your code here - everything from here to end of function
     global hand
     global discard
     process_events(update_info.event)
@@ -156,7 +155,7 @@ async def lay_down(update_info: UpdateInfo):
     # First, find the card we discard
     discard_string = ""
     print(of_a_kind_count)
-    # TODO - Dole - Need to add edge case for last card being a one-of-a-kind
+    # TODO: - Dole - Need to add edge case for last card being a one-of-a-kind
     if (of_a_kind_count[0] > 0):
         for i in range(len(hand)-1, -1, -1):
             if (i == 0):
@@ -197,11 +196,11 @@ if __name__ == "__main__":
     if (DEBUG):
         url = "http://127.0.0.1:16200/test"
 
-        # TODO - Change logging.basicConfig if you want
+        # TODO: - Change logging.basicConfig if you want
         logging.basicConfig(level=logging.INFO)
     else:
         url = "http://127.0.0.1:16200/register"
-        # TODO - Change logging.basicConfig if you want
+        # TODO: - Change logging.basicConfig if you want
         logging.basicConfig(level=logging.WARNING)
 
     payload = {
