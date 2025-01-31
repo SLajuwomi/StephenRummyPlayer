@@ -1,0 +1,80 @@
+[8320:0131/104415.135968:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[8320:0131/104415.136051:ERROR:select_file_dialog_linux_portal.cc(290)] Failed to read portal version property
+[90m[main 2025-01-31T16:44:15.972Z][0m update#setState disabled
+[90m[main 2025-01-31T16:44:15.972Z][0m update#ctor - updates are disabled as there is no update URL
+[91m[main 2025-01-31T16:44:17.431Z][0m vscode-file: Refused to load resource /tmp/.mount_cursorIlSyuS/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursorIlSyuS/resources/app/extensions/theme-seti/icons/seti.woff)
+[90m[main 2025-01-31T16:44:55.741Z][0m Extension host with pid 8482 exited with code: 0, signal: unknown.
+[10113:0131/104541.153429:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/portal/desktop: org.freedesktop.DBus.Error.InvalidArgs: No such interface “org.freedesktop.portal.FileChooser”
+[10113:0131/104541.153500:ERROR:select_file_dialog_linux_portal.cc(290)] Failed to read portal version property
+[90m[main 2025-01-31T16:45:41.986Z][0m update#setState disabled
+[90m[main 2025-01-31T16:45:41.986Z][0m update#ctor - updates are disabled as there is no update URL
+[91m[main 2025-01-31T16:45:43.457Z][0m vscode-file: Refused to load resource /tmp/.mount_cursor0igO7e/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/tmp/.mount_cursor0igO7e/resources/app/extensions/theme-seti/icons/seti.woff)
+[91m[main 2025-01-31T16:49:52.142Z][0m [UtilityProcessWorker]: terminated unexpectedly with code 1300222256, signal: unknown
+[91m[main 2025-01-31T16:49:52.146Z][0m ptyHost terminated unexpectedly with code 1300221824
+[93m[main 2025-01-31T16:49:52.147Z][0m [UtilityProcess type: ptyHost, pid: 10445]: unable to kill the process
+[10113:0131/104952.148753:ERROR:network_service_instance_impl.cc(599)] Network service crashed, restarting service.
+[91m[main 2025-01-31T16:49:52.158Z][0m [UtilityProcessWorker]: terminated unexpectedly with code 1300222256, signal: unknown
+[10113:0131/104952.159505:ERROR:zygote_communication_linux.cc(290)] Failed to send GetTerminationStatus message to zygote
+[90m[main 2025-01-31T16:49:52.161Z][0m Extension host with pid 10272 exited with code: 1300222256, signal: unknown.
+[90m[main 2025-01-31T16:49:52.164Z][0m Extension host with pid 10955 exited with code: 1300221824, signal: unknown.
+[10113:0131/104952.165461:ERROR:zygote_communication_linux.cc(290)] Failed to send GetTerminationStatus message to zygote
+[91m[main 2025-01-31T16:49:52.167Z][0m CodeWindow: renderer process gone (reason: clean-exit, code: <unknown>)
+[10113:0131/104952.185448:ERROR:zygote_communication_linux.cc(290)] Failed to send GetTerminationStatus message to zygote
+[91m[main 2025-01-31T16:49:52.186Z][0m CodeWindow: renderer process gone (reason: clean-exit, code: <unknown>)
+Error sending from webFrameMain:  Error: Render frame was disposed before WebFrameMain could be accessed
+    at s.send (node:electron/js2c/browser_init:2:89021)
+    at _.send (node:electron/js2c/browser_init:2:73633)
+    at t.send (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:67:70513)
+    at I.p (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:73:4709)
+    at I.o (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:73:4674)
+    at I.m (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:73:4530)
+    at b.value (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:74:302)
+    at n.B (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:750)
+    at n.C (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:825)
+    at n.fire (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:1044)
+    at /tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:31315
+    at b.value (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:30002)
+    at n.B (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:750)
+    at n.C (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:825)
+    at n.fire (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:1044)
+    at b.value (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:29845)
+    at n.B (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:750)
+    at n.fire (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:973)
+    at App.ue (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:32293)
+    at App.emit (node:events:531:35)
+    at BrowserWindow.<anonymous> (node:electron/js2c/browser_init:2:11917)
+    at BrowserWindow.emit (node:events:519:28)
+Error sending from webFrameMain:  Error: Render frame was disposed before WebFrameMain could be accessed
+    at s.send (node:electron/js2c/browser_init:2:89021)
+    at _.send (node:electron/js2c/browser_init:2:73633)
+    at t.send (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:67:70513)
+    at I.p (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:73:4709)
+    at I.o (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:73:4674)
+    at I.m (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:73:4530)
+    at b.value (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:74:302)
+    at n.B (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:750)
+    at n.C (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:825)
+    at n.fire (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:1044)
+    at /tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:31315
+    at b.value (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:30002)
+    at n.B (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:750)
+    at n.C (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:825)
+    at n.fire (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:1044)
+    at b.value (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:29845)
+    at n.B (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:750)
+    at n.fire (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:66:973)
+    at App.ue (/tmp/.mount_cursorQiQj8m/resources/app/out/vs/code/electron-main/main.js:61:32293)
+    at App.emit (node:events:531:35)
+    at BrowserWindow.<anonymous> (node:electron/js2c/browser_init:2:11917)
+    at BrowserWindow.emit (node:events:519:28)
+[10113:0131/104952.203457:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.204624:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.205173:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.205493:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.206364:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.206689:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.207047:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.207351:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.207630:ERROR:gpu_process_host.cc(991)] GPU process launch failed: error_code=1002
+[10113:0131/104952.207637:FATAL:gpu_data_manager_impl_private.cc(448)] GPU process isn't usable. Goodbye.
+[0131/104952.214548:ERROR:elf_dynamic_array_reader.h(64)] tag not found

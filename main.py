@@ -15,7 +15,7 @@ Revision History
 1.1 - Very basic test player
 """
 
-DEBUG = True
+DEBUG = False
 PORT = 8017
 USER_NAME = "slajuwomi"
 # TODO:: - change your method of saving information from the very rudimentary method here
@@ -182,12 +182,12 @@ async def lay_down(update_info: UpdateInfo):
     logging.info("Playing: "+play_string)
     return {"play":play_string}
 
-# @app.get("/shutdown")
-# async def shutdown_API():
-#     ''' Game Server calls this endpoint to shut down the player's client after testing is completed.  Only used if DEBUG is True. '''
-#     os.kill(os.getpid(), signal.SIGTERM)
-#     logging.info("Player client shutting down...")
-#     return fastapi.Response(status_code=200, content='Server shutting down...')
+@app.get("/shutdown")
+async def shutdown_API():
+    ''' Game Server calls this endpoint to shut down the player's client after testing is completed.  Only used if DEBUG is True. '''
+    os.kill(os.getpid(), signal.SIGTERM)
+    logging.info("Player client shutting down...")
+    return fastapi.Response(status_code=200, content='Server shutting down...')
 
 
 ''' Main code here - registers the player with the server via API call, and then launches the API to receive game information '''
